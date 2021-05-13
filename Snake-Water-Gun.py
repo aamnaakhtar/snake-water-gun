@@ -1,4 +1,4 @@
-import random#, playsound
+import random, playsound
 def winning_music():
     """
     Plays the winning music.
@@ -21,7 +21,7 @@ def losing_music():
     except Exception as e:
         print(e)
         
-    def tie_music():
+def tie_music():
         """
         Plays the tie music.
         
@@ -46,45 +46,45 @@ if __name__ == "__main__":
         
         if inp=='s' and ran=='s':
             print("\nTie!\n You chose snake and Computer also chose snake.\nNobody gets point.")
-           # tie_music()
+            tie_music()
             
         elif inp=='w' and ran=='w':
             print("\nTie!\n You chose water and Computer also chose water.\nNobody gets point.")
-           # tie_music()
+            tie_music()
             
         elif inp=='g' and ran=='g':
             print("\nTie!\n You chose gun and Computer also chose gun.\nNobody gets point.")
-            #tie_music()
+            tie_music()
             
         elif inp=='s' and ran=='w':
             your_point=your_point+1
             print("\nCONGRATULATIONS! You won this round.\nYou chose snake and Computer chose water.\n The snake drank the water.\n")
-            #winning_music()
+            winning_music()
             
         elif inp=='w' and ran=='s':
             computer_point = computer_point+1
             print("\nOOPS! You lost this round.\nYou chose water and Computer chose snake. \n The snake drank the water.\n")
-            #losing_music()
+            losing_music()
             
         elif inp=='w' and ran=='g':
             your_point=your_point+1
             print("\nCONGRATULATIONS! You won this round.\nYou chose water and Computer chose gun.\n The gun sank into the water.\n")
-            #winning_music()
+            winning_music()
             
         elif inp=='g' and ran=='w':
             computer_point=computer_point+1
             print("\nOOPS! You lost this round.\nYou chose gun and Computer chose water.\n The gun sank into the water.\n")
-            #losing_music()
+            losing_music()
             
         elif inp=='g' and ran=='s':
             your_point=your_point+1
             print("\nCONGRATULATIONS! You won this round.\nYou chose gun and Computer chose snake.\n The gun killed the snake.\n")
-           # winning_music()
+            winning_music()
             
         elif inp=='s' and ran=='g':
             computer_point=computer_point+1
             print("\nOOPS! You lost this round.\nYou chose snake and Computer chose gun.\n The gun killed the snake.\n")
-            #losing_music()
+            losing_music()
             
         else:
             print("Please enter a valid input!\n")
@@ -109,10 +109,6 @@ if __name__ == "__main__":
         print("\nIt was a tie!")
         print("Invalid")
         
-   # print(11-attempts, "No. of guesses left")
-   # attempts=attempts+1
-    
-    #if attempts>10:
-     #   print("\nGame Over!\n")
+  
         
             
